@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Parts Carousel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+
+</head>
+<body>
+
+
+<div id = "head" >
+
+<div id ="header">
+    <a href="../main/index.html">
+        <img class = "logo" src = "./img/로고.webp" width="60">
+    </a>
+
+    <a class = "menu1" href="../cpu/cpu.html">
+        <span>cpu</span>
+    </a>
+
+    <a class = "menu1" href="../gpu/gpu.html">
+        <span>gpu</span>
+    </a>
+
+    <a class = "menu1" href="../ram/ram.html">
+        <span>ram</span>
+    </a>
+
+    <a class = "menu1" href="../ssd/ssd.html">
+        <span>ssd</span>
+    </a>
+
+</div>
+<br>
+
+</div>
+
+<div class="carousel">
+    <div class="carousel-inner">
+
+        <div class="carousel-item">
+            <img class="image" src="./img/cpu_main.jpg" alt="CPU">
+        </div>
+
+        <div class="carousel-item">
+            <img class ="image" src="./img/gpu.jpg" alt="GPU">
+        </div>
+
+        <div class="carousel-item">
+            <img class ="image" src="./img/ram.jpg" alt="RAM">
+        </div>
+
+        <div class="carousel-item">
+            <img class ="image" src="./img/ssd.jpg" alt="SSD">
+        </div>
+
+    </div>
+</div>
+
+<br>
+<div class = "progresscontainer">
+    <br>
+    <button onclick="showSlide(0)" class="item">Central Processing Unit</button>
+    <button onclick="showSlide(1)" class="item">Graphics Provessing Unit</button>
+    <button onclick="showSlide(2)" class="item">Random Access Memory</button>
+    <button onclick="showSlide(3)" class="item">Solid State Drive</button>
+</div>
+
+<div>
+    <div id = "section2">
+            <div id ="미디어">
+                <h1>미디어</h1>
+            </div>
+
+            <div id ="미디어1">
+                <ul class="quick-list">
+                    <li>
+                        <a href="https://news.naver.com/">
+                            <img src="./img/news.jpg">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.youtube.com/results?search_query=%EC%9D%8C%EC%95%85">
+                            <img src="./img/music.jpg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id ="미디어2">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="https://unsplash.com/ko">
+                                <img src="./img/unsplash.jpg">
+                                <h1>&nbsp&nbsp &nbspUnsplash</h1>
+
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.seoultech.ac.kr/index.jsp">
+                                <img src="./img/서울과학기술대학교.jpg">
+                                <h1>&nbsp&nbsp&nbspSeoulTech</h1>
+
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.google.com/">
+                                <img src="./img/google.jpg" >
+                                <h1>&nbsp &nbsp&nbspGoogle</h1>
+
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.netflix.com/kr/">
+                                <img src="./img/netflix.jpg">
+                                <h1>&nbsp &nbsp&nbsp NETFLIX</h1>
+
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://prod.danawa.com/list/?cate=112747&15main_11_02=">
+                                <img src="./img/다나와.jpg">
+                                <h1>&nbsp&nbsp &nbsp다나와</h1>
+
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://quasarzone.com/">
+                                <img src="./img/퀘이사.jpg">
+                                <h1>&nbsp&nbsp&nbsp퀘이사존</h1>
+
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://news.naver.com/section/105">
+                                <img src="./img/it과학.jpg" >
+                                <h1>&nbsp &nbsp&nbspIT과학</h1>
+
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://comic.naver.com/index">
+                                <img src="./img/webtoon.jpg" >
+                                <h1>&nbsp &nbsp&nbspWebtoon</h1>
+
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Navigation -->
+
+                </div>
+            </div>
+
+
+    </div>
+</div>
+
+<script src="scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 4,
+        slidesPerGroup: 4,  // 슬라이드를 한 번에 4개씩 넘기기
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+
+</body>
+</html>

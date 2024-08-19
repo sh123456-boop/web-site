@@ -1,0 +1,180 @@
+ html, body {
+            margin: 0;
+            padding : 0;
+            font-family: Arial, sans-serif;
+
+        }
+
+        .container {
+             overflow-y: scroll;
+             scroll-snap-type: y mandatory;
+             scroll-behavior: smooth;
+             height : 1750px;
+        }
+
+        .container  div {
+          scroll-snap-align: start; /* 스크롤 위치 맞춤 */
+
+        }
+
+
+       #head {
+        background : white;
+        position : fixed;
+        top:0;
+        left: 0;
+        width : 100%;
+        z-index : 1000;
+        border-bottom: 2px solid lightgray;
+         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 설정 */
+        }
+
+
+               #head > #header {
+                   background-color: #fff;
+                   padding: 20px 0 0 0;
+                   text-align: center;
+                   height : 50px;
+                   width : 1500px;
+                   margin : 0 auto;
+
+               }
+
+               #header a {
+                   color: #333;
+                   text-decoration: none;
+                   margin: 0 100px;
+                   font-family: 'LG Smart UI', sans-serif;
+                   font-size: 30px;
+               }
+
+               #header a:hover {
+                   color: #0056b3;
+               }
+
+               #header .menu1 {
+                   font-weight: normal;
+
+               }
+
+               #header .logo {
+                   position: absolute; /* Allow the logo to be positioned absolutely */
+                   left: 50px; /* Adjust the value to your preference */
+                   top: 50%; /* Center vertically based on the height of the header */
+                   transform: translateY(-50%); /* Adjust for exact centering */
+               }
+
+#section1 {
+    height : 2100px;
+}
+
+#CPU{
+    position : relative;
+    top : 150px;
+    width : 1550px;
+    height : 60px;
+    color : black;
+    margin : 0 auto;
+    font-size : 40px;
+    padding : 0 0px 0 0px;
+    text-align : center;
+}
+
+#cpu설명{
+    text-align:left;
+    position : relative;
+    top : 20px;
+    font-size: 25px;
+}
+
+#CPU h3 {
+    text-align : left;
+}
+
+#CPU p {
+    text-align : left;
+    font-size : 25px;
+}
+
+#section2 {
+    height : 100vh;
+    background : white;
+    text-align : center;
+}
+
+#core {
+     position : relative;
+        top : 150px;
+        width : 1550px;
+        color : black;
+        margin : 0 auto;
+        font-size : 40px;
+        padding : 0 0px 0 0px;
+        text-align : center;
+}
+
+#core h3{
+    text-align : left;
+}
+
+#core p {
+    text-align : left;
+    font-size : 25px;
+}
+
+#section3 {
+    height : 100vh;
+    background : white;
+}
+
+#cash{
+     position : relative;
+            top : 100px;
+            width : 1550px;
+            color : black;
+            margin : 0 auto;
+            font-size : 40px;
+            padding : 0 0px 0 0px;
+            text-align : center;
+}
+
+#cash h3{
+    text-align : left;
+}
+
+#cash p {
+    margin : 0;
+    text-align : left;
+    font-size : 25px;
+}
+
+#section4 {
+    height : 100vh;
+    background : white;
+}
+
+#brand {
+position : relative;
+            top : 100px;
+            width : 1550px;
+            color : black;
+            margin : 0 auto;
+            font-size : 40px;
+            padding : 0 0px 0 0px;
+            text-align : center;
+}
+
+#brand h3{
+    text-align : left;
+}
+
+#brand p {
+    margin : 0;
+    text-align : left;
+    font-size : 25px;
+}
+
+#brand h4{
+    text-align : left;
+
+}
