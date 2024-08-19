@@ -1,0 +1,21 @@
+
+/* 맨 위로 가기 버튼 스타일 */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none; /* 스크롤 시에만 나타나도록 기본 상태를 숨김 */
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease-in-out;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #555;
+}
